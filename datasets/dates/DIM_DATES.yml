@@ -1,0 +1,42 @@
+unique_name: DIM_DATES
+object_type: dataset
+label: DIM_DATES
+columns:
+  - name: DATE_ID
+    data_type: long
+  - name: YEAR_MONTH_ID
+    data_type: long
+  - name: YEAR_WEEK_ID
+    data_type: long
+  - name: CALENDAR_DATE
+    data_type: date
+  - name: YEAR
+    data_type: long
+  - name: QUARTER
+    data_type: long
+  - name: MONTH
+    data_type: long
+  - name: WEEKDAY
+    data_type: long
+  - name: WEEKDAY_NAME_SHORT
+    data_type: string
+  - name: WEEKDAY_NAME_LONG
+    data_type: string
+  - name: IS_WEEKEND
+    data_type: long
+  - name: CALENDAR_SEASON
+    data_type: string
+  - name: ACADEMIC_YEAR
+    data_type: string
+  - name: IS_REPORTING_DAY
+    data_type: long
+  - name: UPDATED_AT
+    data_type: datetime
+  - name: INTERMEDIATE_LOAD_TIMESTAMP
+    data_type: datetime
+  - name: OPS_LOAD_TIMESTAMP
+    data_type: datetime
+  - name: MART_LOAD_TIMESTAMP
+    data_type: datetime
+connection_id: con_ACC_LH_438_MART_DATES
+table: DIM_DATES
