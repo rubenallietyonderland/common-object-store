@@ -5,7 +5,7 @@ columns:
   - name: MARKET_PK
     data_type: string
   - name: MARKET_ID
-    data_type: decimal(38,0)
+    data_type: long
   - name: MARKET_CODE
     data_type: string
   - name: MARKET_NAME
@@ -18,5 +18,5 @@ columns:
     data_type: datetime
   - name: MART_LOAD_TIMESTAMP
     data_type: datetime
-connection_id: con_LAKEHOUSE_PRD_MART_ORGANISATIONS
+connection_id: con_MART_ORGANISATIONS
 table: DIM_MARKETS
