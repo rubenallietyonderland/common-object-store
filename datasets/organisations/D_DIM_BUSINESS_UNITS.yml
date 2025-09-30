@@ -1,0 +1,26 @@
+unique_name: D_DIM_BUSINESS_UNITS
+object_type: dataset
+label: DIM_BUSINESS_UNITS
+columns:
+  - name: BUSINESS_UNIT_PK
+    data_type: string
+  - name: BUSINESS_UNIT_ID
+    data_type: long
+  - name: BUSINESS_UNIT_DESCRIPTION
+    data_type: string
+  - name: BUSINESS_UNIT_CODE
+    data_type: string
+  - name: BUSINESS_UNIT_NAME
+    data_type: string
+  - name: MASTERDATA_ID_BU
+    data_type: long
+  - name: INTERMEDIATE_LOAD_TIMESTAMP
+    data_type: datetime
+  - name: MARKET_FK
+    data_type: string
+  - name: OPS_LOAD_TIMESTAMP
+    data_type: datetime
+  - name: MART_LOAD_TIMESTAMP
+    data_type: datetime
+connection_id: con_MART_ORGANISATIONS
+table: DIM_BUSINESS_UNITS

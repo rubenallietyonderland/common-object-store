@@ -1,0 +1,28 @@
+unique_name: DIM_MARKETS
+object_type: dimension
+label: DIM_MARKETS
+hierarchies:
+  - unique_name: DIM_MARKETS Hierarchy
+    label: DIM_MARKETS Hierarchy
+    levels:
+      - unique_name: DIM_MARKETS_pk
+        is_hidden: true
+        secondary_attributes:
+          - unique_name: DIM_MARKETS_name
+            label: Market Name
+            contains_unique_names: false
+            dataset: DIM_MARKETS
+            is_unique_key: false
+            key_columns:
+              - MARKET_NAME
+            name_column: MARKET_NAME
+level_attributes:
+  - unique_name: DIM_MARKETS_pk
+    label: DIM_MARKETS_pk
+    contains_unique_names: false
+    dataset: DIM_MARKETS
+    is_unique_key: false
+    key_columns:
+      - MARKET_PK
+    name_column: MARKET_ID
+type: standard

@@ -1,0 +1,28 @@
+unique_name: DIM_BUSINESS_UNITS
+object_type: dimension
+label: Business Units
+hierarchies:
+  - unique_name: DIM_BUSINESS_UNITS Hierarchy
+    label: DIM_BUSINESS_UNITS Hierarchy
+    levels:
+      - unique_name: DIM_BUSINESS_UNITS_pk
+        is_hidden: true
+        secondary_attributes:
+          - unique_name: DIM_BUSINESS_UNITS_name
+            label: Business Unit Name
+            contains_unique_names: false
+            dataset: D_DIM_BUSINESS_UNITS
+            is_unique_key: false
+            key_columns:
+              - BUSINESS_UNIT_NAME
+            name_column: BUSINESS_UNIT_NAME
+level_attributes:
+  - unique_name: DIM_BUSINESS_UNITS_pk
+    label: DIM_BUSINESS_UNITS_pk
+    contains_unique_names: false
+    dataset: D_DIM_BUSINESS_UNITS
+    is_unique_key: false
+    key_columns:
+      - BUSINESS_UNIT_PK
+    name_column: BUSINESS_UNIT_ID
+type: standard

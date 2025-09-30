@@ -1,0 +1,29 @@
+unique_name: DIM_FASCIAS
+object_type: dimension
+label: Fascias
+hierarchies:
+  - unique_name: DIM_FASCIAS Hierarchy
+    label: DIM_FASCIAS Hierarchy
+    levels:
+      - unique_name: DIM_FASCIAS_pk
+        is_hidden: true
+        secondary_attributes:
+          - unique_name: DIM_FASCIAS_name
+            label: Fascia Name
+            contains_unique_names: false
+            dataset: D_DIM_FASCIAS
+            is_hidden: true
+            is_unique_key: false
+            key_columns:
+              - FASCIA_NAME
+            name_column: FASCIA_NAME
+level_attributes:
+  - unique_name: DIM_FASCIAS_pk
+    label: DIM_FASCIAS_pk
+    contains_unique_names: false
+    dataset: D_DIM_FASCIAS
+    is_unique_key: false
+    key_columns:
+      - FASCIA_PK
+    name_column: FASCIA_ID
+type: standard
